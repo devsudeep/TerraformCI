@@ -2,20 +2,20 @@ terraform {
   required_version = ">=1.10.2"
   required_providers {
     azurerm = {
-      source  = "hashicorp/azurerm"
-    #   version = "~>3.43.0"
+      source = "hashicorp/azurerm"
+      #   version = "~>3.43.0"
     }
   }
 }
-terraform { 
-  cloud { 
-    
-    organization = "krishna-terraform" 
+terraform {
+  cloud {
 
-    workspaces { 
-      name = "remotestate" 
-    } 
-  } 
+    organization = "krishna-terraform"
+
+    workspaces {
+      name = "remotestate"
+    }
+  }
 }
 
 provider "azurerm" {
