@@ -42,3 +42,10 @@ resource "azurerm_storage_container" "container" {
   storage_account_name  = azurerm_storage_account.sa.name
   container_access_type = "private"
 } 
+
+# create one more container
+resource "azurerm_storage_container" "container2" {
+  name                  = "tfstate2"
+  storage_account_name  = azurerm_storage_account.sa.name
+  container_access_type = "private"
+}
